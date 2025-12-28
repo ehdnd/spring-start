@@ -1,5 +1,6 @@
 package ehdnd.spring_start;
 
+import ehdnd.spring_start.aop.TimeTraceAop;
 import ehdnd.spring_start.repository.MemberRepository;
 import ehdnd.spring_start.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +23,8 @@ public class SpringConfig {
   }
 
 //  @Bean
-//  public MemberRepository memberRepository() {
-//    return new MemoryMemberRepository();
-//    return new JdbcMemberRepository(dataSource);
-//    return new JdbcTemplateMemberRepository(dataSource);
-//    return new JpaMemberRepository(em);
+//  public TimeTraceAop timeTraceAop() {
+//    return new TimeTraceAop();
 //  }
 
 }
